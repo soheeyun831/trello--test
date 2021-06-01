@@ -1,0 +1,82 @@
+.head-copy {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.body-copy {
+  color: #7f8c8d;
+  font-size: 14px;
+}
+
+.body-copy.add {
+  cursor: pointer;
+  padding-top: 10px;
+  letter-spacing: -0.4px;
+}
+
+.input {
+  width: 100%;
+  height: 44px;
+  padding: 0 8px;
+  margin-bottom: 8px;
+  color: #7f8c8d;
+  box-sizing: border-box;
+  border: 1px solid #ecf0f1;
+  border-radius: 6px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0);
+  transition: all 300ms;
+}
+
+.input:focus,
+.input:hover,
+.input:active {
+  outline: none;
+}
+
+.input:focus {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, .25);
+  transition: all 300ms;
+}
+
+.btn-group {
+  display: flex;
+}
+
+.btn {
+  height: 36px;
+  padding: 0 12px;
+  color: #ffffff;
+  font-size: 14px;
+  outline: none;
+  border: transparent;
+  border-radius: 6px;
+  background-color: #3b3b98;
+  transition: all 300ms;
+  cursor: pointer;
+}
+
+.btn:focus,
+.btn:hover,
+.btn:active {
+  outline: none;
+  background-color: #18185c;
+}
+
+.close {
+  width: 36px;
+  margin-left: 6px;
+  border: none;
+  background-color: transparent;
+  background-image: url(../images/close.png);
+  background-size: 28px 28px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.close:focus,
+.close:hover,
+.close:active {
+  background-color: transparent;
+}
