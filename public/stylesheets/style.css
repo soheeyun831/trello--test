@@ -3,26 +3,27 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-.list-group {
+.column-group {
   display: flex;
   padding-top: 60px;
 }
 
-.list-group .list {
+.column-group .column {
   width: 300px;
   height: 100%;
   flex-shrink: 0;
   overflow: hidden;
   margin-right: 40px;
+  border: 1px solid transparent;
   border-radius: 6px;
   background-color: #f5f6fa;
 }
 
-.list-group .list:last-child {
+.column-group .column:last-child {
   margin-right: 0;
 }
 
-.list-group .list.add {
+.column-group .column.add {
   width: 300px;
   padding: 8px;
   color: #f5f6fa;
@@ -31,7 +32,7 @@ body {
   cursor: pointer;
 }
 
-.list-header {
+.column-header {
   padding: 8px;
   color: #7f8c8d;
   box-sizing: border-box;
@@ -40,17 +41,21 @@ body {
   background-color: #ecf0f1;
 }
 
-.list-contents {
-  padding: 12px 8px 20px;
+.column-contents {
+  position: relative;
+  padding: 12px 8px 60px;
 }
 
-.card-list {
-
+.column-contents .body-copy.add {
+  position: absolute;
+  bottom: 20px;
 }
 
 .card-item {
   padding: 8px;
   margin-bottom: 8px;
+  border: 1px solid transparent;
+  border-radius: 6px;
   background-color: #ffffff;
   cursor: pointer;
 }

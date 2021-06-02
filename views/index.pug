@@ -2,33 +2,5 @@ extends layout
 
 block content
     h1 웹 어플리케이션 엔지니어 과제 (Trello)
-    section.list-group
-        div.list
-            div.list-header
-                p.head-copy 리스트1
-            div.list-contents
-                ul.card-list
-                    li.card-item
-                        p.body-copy 카드1
-                    li.card-item
-                        p.body-copy 카드2
-                    li.card-item
-                        p.body-copy 카드3
-                    li.card-item
-                        input.input#card-name(type="text" placeholder='Add a card...')
-                        div.btn-group
-                            button.btn Save
-                            button.btn.close
-                p.body-copy.add Add a card...
-        div.list
-            div.list-header
-                p.head-copy 리스트2
-            div.list-contents
-                p.body-copy.add Add a card...
-        div.list
-            div.list-header
-                input.input#list-name(type="text" placeholder='Add a list...')
-                div.btn-group
-                    button.btn Save
-                    button.btn.close
-        div.list.add Add a list...
+    section.column-group
+        div.column.add#add-column Add a list...

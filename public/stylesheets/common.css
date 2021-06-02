@@ -64,6 +64,11 @@
   background-color: #18185c;
 }
 
+.btn:hover {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, .25);
+  transition: all 300ms;
+}
+
 .close {
   width: 36px;
   margin-left: 6px;
@@ -79,4 +84,9 @@
 .close:hover,
 .close:active {
   background-color: transparent;
+}
+
+.close:hover {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0);
+  opacity: 0.6;
 }
