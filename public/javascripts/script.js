@@ -107,9 +107,7 @@ function dragOver(e) {
   e.preventDefault();
 }
 
-function swapTasks(node1, node2) {
-  console.log(node1)
-  console.log(node2)
+function swapCard(node1, node2) {
   node1.parentNode.replaceChild(node1, node2);
   node1.parentNode.insertBefore(node2, node1);
   node1.parentNode.insertBefore(node1, node2);
@@ -129,13 +127,10 @@ function drop(e) {
         !== e.target.parentNode.parentNode.id) {
       e.target.parentNode.appendChild(document.getElementById(card_id));
     }
-
-    swapTasks(document.getElementById(card_id),
+    swapCard(document.getElementById(card_id),
         document.getElementById(e.target.id));
     e.target.style.borderColor = "transparent";
     e.target.style.opacity = "1";
     document.getElementById(card_id).style.opacity = "1";
-  } else {
-    console.log('Not a drop target');
   }
 }
